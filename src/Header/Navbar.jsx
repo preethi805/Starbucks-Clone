@@ -22,7 +22,7 @@ setIsChecked(!isChecked);
   return (
     <div>
       <nav  className="navbar">
-        {/* <img className="logo" src="./Assets/starbucks.logo.jpeg" alt="Starbucks Logo" /> */}
+        <img className="logo" src="./Assets/starbucks.logo.jpeg" alt="Starbucks Logo" />
         <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/Gift">Gift</Link>

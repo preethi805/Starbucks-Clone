@@ -1,0 +1,146 @@
+/* Checkout.css */
+.checkout-page {
+  min-height: calc(100vh - 30px);
+  padding: 40px 18px;
+  background: linear-gradient(180deg,#f7fbff 0%, #fff 100%);
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  color: #222;
+}
+
+.checkout-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 26px;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .checkout-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 12px 40px rgba(20,40,60,0.06);
+}
+
+.right {
+  position: sticky;
+  top: 28px;
+}
+
+.heading {
+  margin: 0 0 14px 0;
+  color: #1f7a8c;
+  font-size: 26px;
+}
+
+/* Order summary list */
+.order-summary h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6px;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.s-left { display:flex; gap:12px; align-items:center; }
+.s-left img { width:64px; height:54px; object-fit:cover; border-radius:8px; }
+.s-name { font-weight:700; }
+.s-qty { color:#777; font-size:13px; }
+
+/* Payment section */
+.payment-section {
+  margin-top: 18px;
+}
+
+.pay-option {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+
+.pay-option input { margin-right: 10px; transform: scale(1.02); }
+
+.pay-option:hover { background: #fbfcff; }
+
+.amount-row {
+  display:flex;
+  justify-content:space-between;
+  padding: 12px;
+  margin-top: 12px;
+  background: #fbfdff;
+  border-radius: 10px;
+  border: 1px solid #f2f6fb;
+  align-items:center;
+}
+
+.pay-amount { font-weight: 800; font-size: 18px; color: #111; }
+
+.btn.pay-now {
+  margin-bottom: 12px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg,#ff7a7a,#f16c6c);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(241,108,108,0.13);
+}
+
+/* Confirmed UI */
+.confirmed {
+  text-align: center;
+  padding: 18px;
+}
+
+.confirmed h3 { color: #2e7d32; margin-top: 10px; }
+.confirmed p { color: #666; }
+
+.paid {
+  margin-top: 14px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  align-items:center;
+  font-weight:700;
+}
+
+.paid-amount {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(20,40,60,0.04);
+}
+
+.confirmed-actions { margin-top: 16px; display:flex; gap: 10px; justify-content:center; }
+
+.note { margin-top: 14px; color: #777; font-size: 13px; }
+
+.order-box {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(20,40,60,0.05);
+}
+
+.order-box h4 { margin: 0 0 10px 0; color: #444; }
+.order-row { display:flex; justify-content:space-between; margin: 8px 0; color:#555; }
+.order-row.total { font-weight:800; color:#111; border-top:1px solid #f2f2f2; padding-top:8px; margin-top:10px; }
+
